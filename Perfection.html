@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLG Thug Life Snoop Dogg</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, black, purple, blue, black);
+            background-size: 400% 400%;
+            color: lime;
+            font-family: 'Comic Sans MS', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            animation: bg-move 8s infinite;
+        }
+        @keyframes bg-move {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        h1 {
+            font-size: 5em;
+            text-shadow: 5px 5px red, -5px -5px yellow, 10px 10px cyan;
+            animation: pulse 1s infinite, rainbow 3s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        @keyframes rainbow {
+            0% { color: red; }
+            25% { color: yellow; }
+            50% { color: lime; }
+            75% { color: cyan; }
+            100% { color: purple; }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px magenta, 0 0 30px lime;
+            margin: 10px;
+            cursor: pointer;
+        }
+        img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, red, yellow, green);
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border: 3px solid lime;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px magenta;
+        }
+        .button:hover {
+            background: linear-gradient(45deg, yellow, red, cyan);
+            color: white;
+            transform: scale(1.2) rotate(10deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>MLG Thug Life Snoop Dogg</h1>
+
+    <!-- Images dynamiques  -->
+    <div>
+        <img src="https://i.postimg.cc/RVryT6n6/image.png" alt="doritos" onclick="https://freesound.org/embed/sound/iframe/570335/')">
+        <img src="https://i.postimg.cc/FzFZPvm6/image.png" alt="Airhorn" onclick="playSound('https://www.myinstants.com/media/sounds/mlg-airhorn.mp3')">
+          </div>
+
+    <!-- Snoop Dogg -->
+    <div>
+        <h2>Snoop Dogg Is Watching You</h2>
+        <img src="https://i.postimg.cc/mk93DrbK/snoop-dog-mlg.gif" alt="Snoop Dogg">
+    </div>
+
+    <!-- GTA V -->
+    <div>
+        <h2>GTA V MLG</h2>
+        <img src="https://i.postimg.cc/Fs911Rsc/A1mlg.jpg" alt="GTA V">
+    </div>
+
+    <!-- Sons activables -->
+    <div>
+        <h2>Joue les sons MLG</h2>
+        <iframe width="110" height="200" src="https://www.myinstants.com/instant/air-horn-club-sample/embed/" frameborder="0" scrolling="no"></iframe>
+       <iframe width="110" height="200" src="https://www.myinstants.com/instant/my-hope-will-never-die-mlg-509/embed/" frameborder="0" scrolling="no"></iframe>
+       <iframe width="110" height="200" src="https://www.myinstants.com/instant/mlg-airhorn-d-88238/embed/" frameborder="0" scrolling="no"></iframe>
+      <iframe width="110" height="200" src="https://www.myinstants.com/instant/smoke-weed-everyday-remix/embed/" frameborder="0" scrolling="no"></iframe>
+       <iframe width="110" height="200" src="https://www.myinstants.com/instant/thug-life-instrumental/embed/" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <!-- Scripts pour jouer des sons -->
+    <script>
+        function playSound(url) {
+            const audio = new Audio(url);
+            audio.play();
+        }
+    </script>
+
+    <!-- Liens vers du contenu MLG -->
+    <div class="content">
+        <h2>Explorez l'univers MLG</h2>
+        <a href="https://www.youtube.com/watch?v=H4FbRfeOl-8" class="button" target="_blank">Explorer YouTube</a>
+        <a href="https://www.reddit.com/r/MLG/" class="button" target="_blank">Rejoindre Reddit MLG</a>
+    </div>
+</body>
+</html>
